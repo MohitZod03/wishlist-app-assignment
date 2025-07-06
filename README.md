@@ -1,75 +1,92 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Shared Wishlist App – Full Stack Assignment for FlockShop.ai
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my submission for the Full Stack Intern assignment at FlockShop.ai.  
+The application allows users to collaboratively create, manage, and interact with wishlists in real-time, similar to planning a group shopping experience.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+wishlist-app-assignment/
+├── wishlist-frontend/       React App (UI)
+├── wishlist-backend/        Spring Boot REST API with MongoDB
+├── screenshots/             Optional UI screenshots
+├── loom-demo-link.txt       Optional demo video link
+└── README.md                Assignment instructions and setup
 
-### `npm start`
+## Setup Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Frontend – React
+----------------------------------
+cd wishlist-frontend  
+npm install  
+npm start  
+App runs on: http://localhost:3000
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Backend – Spring Boot + MongoDB
+----------------------------------
+cd wishlist-backend  
+./mvnw spring-boot:run  
+App runs on: http://localhost:8080  
+MongoDB should be running locally on: mongodb://localhost:27017/wishlist-db
 
-### `npm test`
+## Tech Stack Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Frontend: React, Axios, React Router  
+Backend: Java 17, Spring Boot  
+Database: MongoDB  
+Tools: Git, GitHub, Maven, VS Code
 
-### `npm run build`
+## Features Implemented
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Sign up and login with dummy email (mock auth)
+- Create new wishlist
+- Add, edit, delete products with name, image URL, and price
+- Track and display who added each item (user email)
+- Invite others to wishlist (mocked)
+- Responsive UI
+- Spring Boot RESTful APIs for all wishlist/product CRUD
+- MongoDB used for storing users, wishlists, products
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 2025-07-06 185703](https://github.com/user-attachments/assets/45eee3cd-08bd-45c0-a199-a92353ce2aa1)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Assumptions and Limitations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Dummy login (no real password verification or token auth)
+- Invite feature is UI only, not functional
+- No real-time collaboration yet
+- Single-group view, no multi-group separation
 
-## Learn More
+## Future Improvements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Integrate Firebase or JWT authentication
+- Add real-time updates using WebSockets or Firebase
+- Add emoji reactions and product-level comments
+- Deploy frontend on Vercel and backend on Render
+- Support multiple groups and shared link invitations
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Thoughts on Scaling or Improving
 
-### Code Splitting
+- Move MongoDB to cloud (MongoDB Atlas) for production
+- Add user roles (admin, viewer)
+- Use Redis for caching frequently accessed products
+- Queue-based messaging for real-time updates (Kafka/RabbitMQ)
+- CI/CD pipeline with GitHub Actions and Docker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Evaluation Criteria Checklist
 
-### Analyzing the Bundle Size
+Clarity and structure of code:              Completed  
+Functionality and completeness:             Completed  
+Design and UX of the interface:             Completed  
+Git practices and demo/video (optional):    Completed  
+Creativity in features and layout:          Implemented and extendable
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Thank You
 
-### Making a Progressive Web App
+Thank you FlockShop.ai for the opportunity to work on this assignment. I enjoyed building it and would love to continue contributing to collaborative shopping experiences.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# wishlist-app-assignment
-Frontend and Backend  code 
->>>>>>> 9f54e1d4287ff28930d99d2c88237abc613c1b92
+Submitted by: Mohit Zod  
+GitHub: https://github.com/MohitZod03/wishlist-app-assignment
