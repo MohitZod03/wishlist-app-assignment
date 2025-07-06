@@ -48,7 +48,7 @@ Tools: Git, GitHub, Maven, VS Code
 
 ## Screenshots
 
-![Screenshot 2025-07-06 185703](https://github.com/user-attachments/assets/45eee3cd-08bd-45c0-a199-a92353ce2aa1)
+[![Screenshot 2025-07-06 185703](https://github.com/user-attachments/assets/45eee3cd-08bd-45c0-a199-a92353ce2aa1)](https://github.com/MohitZod03/wishlist-app-assignment/tree/main/ScreenShort)
 
 
 
